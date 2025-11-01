@@ -14,7 +14,12 @@
     "dark-mode",
     "vite"
   ],
-  "author": "Your Name",
+  "homepage": "https://jordanfleming1.github.io/Online-Course-Demo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JordanFleming1/Online-Course-Demo.git"
+  },
+  "author": "Jordan Fleming",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
