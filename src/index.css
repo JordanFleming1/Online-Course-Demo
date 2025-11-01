@@ -1,0 +1,214 @@
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #222;
+  background-color: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark-mode {
+  color-scheme: dark;
+  background: #181a1b !important;
+  color: #eee !important;
+}
+
+.dark-mode body {
+  background: #181a1b !important;
+  color: #eee !important;
+}
+
+.dark-mode .container {
+  background: #23272a !important;
+  color: #eee !important;
+  box-shadow: 0 8px 32px rgba(40,40,40,0.10);
+}
+
+.dark-mode .navbar {
+  background: #23272a !important;
+  color: #eee !important;
+}
+
+.dark-mode .card {
+  background: #23272a !important;
+  color: #eee !important;
+  box-shadow: 0 4px 24px rgba(40,40,40,0.08);
+}
+
+.dark-mode button, .dark-mode .btn {
+  background: #222 !important;
+  color: #eee !important;
+  border-color: #444 !important;
+}
+
+.dark-mode .contact-float-btn {
+  background: #222 !important;
+  color: #eee !important;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 44px; /* Reduced height for compact navbar */
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f8fafc 0%, #e3f0ff 100%);
+  color: #222;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  font-family: 'Segoe UI', 'Comic Sans MS', 'Arial Rounded MT Bold', Arial, sans-serif;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(100,180,255,0.10);
+  padding: 32px 24px;
+}
+
+
+/* Navbar compact styles */
+.navbar {
+  min-height: 44px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+.navbar-brand {
+  font-size: 1.15rem !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+.nav-link {
+  font-size: 1rem !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+.why-card {
+  background: linear-gradient(135deg, #e3f0ff 0%, #b2ebf2 100%) !important;
+  color: #1976d2 !important;
+  font-family: inherit;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(100,180,255,0.10);
+}
+
+/* Modern container style */
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  background: linear-gradient(120deg, #ffffff 60%, #e3f0ff 100%);
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.10);
+  padding: 24px 12px;
+  color: #222;
+  font-family: inherit;
+}
+/* Animated page transitions */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms, transform 400ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 400ms, transform 400ms;
+}
+.page-transition {
+  min-height: 70vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button, .btn {
+  border-radius: 14px !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(100,180,255,0.08);
+  transition: background 0.2s, color 0.2s;
+  font-size: 1.08rem;
+}
+/* Card hover effect for all cards */
+/* Card styles and mobile spacing */
+.card {
+  border-radius: 18px !important;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 1.5rem;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 36px rgba(25, 118, 210, 0.15);
+}
+/* Accessibility: focus styles for buttons and links */
+button:focus, .btn:focus, a:focus, .nav-link:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #90caf9;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 8px 2vw;
+    border-radius: 16px;
+  }
+  h1 {
+    font-size: 2.1em;
+  }
+  .card {
+    margin-bottom: 1.2rem;
+  }
+  .navbar {
+    min-height: 38px !important;
+    font-size: 0.95rem;
+  }
+  .navbar-brand {
+    font-size: 1rem !important;
+  }
+  .nav-link {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

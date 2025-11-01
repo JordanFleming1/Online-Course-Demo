@@ -1,0 +1,12 @@
+export { default as Home } from './Home';
+export { default as About } from './About';
+export { default as Courses } from './Courses';
+export { default as CourseDetails } from './CourseDetails';
+export { default as Dashboard } from './Dashboard';
+export { default as Reviews } from './Reviews';
+export { default as FAQ } from './FAQ';
+export { default as Pricing } from './Pricing';
+export { default as Contact } from './Contact';
+export { default as NotFound } from './NotFound';
+export { default as Checkout } from './Checkout';
+export { default as ThankYou } from './ThankYou';
